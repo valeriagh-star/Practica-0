@@ -72,3 +72,8 @@ La diferencia principal radica en su **pertenencia a una clase u objeto**:
 En Java, estrictamente todo bloque de código modular es un **método** por estar alojado dentro de una clase, en nuestro código: (`public static double calcularPromedio`), aunque en el paradigma estructurado se le conceptualice como una función.
 
 ---
+
+### 6. ¿Qué representa un commit en Git?
+Un **commit** representa una **captura del estado del proyecto** en un momento determinado. Funciona como un punto de guardado en el historial de versiones donde se registran los cambios realizados en los archivos junto con un mensaje descriptivo, el autor y la fecha, permitiendo revisar la evolución del código o regresar a versiones anteriores si es necesario.
+
+---
