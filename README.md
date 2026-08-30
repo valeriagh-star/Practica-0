@@ -1,10 +1,6 @@
 # Práctica 0
 
----
-
 ## Paradigmas de programación y flujo básico con Git
-
----
 
 > ### Integrantes del Equipo:
 > * García Herrera Valeria
@@ -16,13 +12,11 @@
 > ### Breve descripción de la práctica:
 > En esta práctica se desarrolló un programa en Java que permite capturar el nombre y tres calificaciones de un estudiante. El programa calcula su promedio y, con base en este resultado, determina su estado académico.
 >
-> El estudiante será **APROBADO** si obtiene un promedio mayor o igual a `6.0`; de lo contrario, será **REPROBADO**. Finalmente, el programa despliega el resumen con el nombre, promedio final y estado.
+> El estudiante será **APROBADO** si obtiene un promedio mayor o igual a `6.0`; de lo contrario, será **REPROBADO**. Finalmente, el programa imprime en consola el resumen con el nombre, calificaciones, promedio final y estado de aprobación del estudiante.
 
 ---
 
 ## Respuestas de Reflexión:
-
----
 
 ### 1. ¿Qué significa programar de forma estructurada?
 **Programar de forma estructurada** significa organizar el flujo de un programa de manera clara y ordenada utilizando únicamente **estructuras de control** explícitas y evitando saltos arbitrarios en la ejecución. Su propósito principal es lograr un código más fácil de leer, probar, modificar y mantener.
@@ -69,11 +63,22 @@ La diferencia principal radica en su **pertenencia a una clase u objeto**:
 - **Función:** Es un bloque de código independiente que realiza una tarea específica sin depender de objetos o clases (característico de lenguajes estructurados como C).
 - **Método:** Es una función declarada dentro de una **clase**, orientada a definir el comportamiento de dicha clase o de sus objetos. (Representa un comportamiento dentro de la Programación Orientada a Objetos.)
 
-En Java, estrictamente todo bloque de código modular es un **método** por estar alojado dentro de una clase, en nuestro código: (`public static double calcularPromedio`), aunque en el paradigma estructurado se le conceptualice como una función.
+En Java, los bloques de código que realizan tareas y están definidos dentro de una clase se consideran **métodos**. Por ejemplo, en nustro código: `public static double calcularPromedio(...)` es un método. Aunque conceptualmente puede cumplir la función de una **función tradicional**, en Java se denomina método debido a que se encuentra dentro de una clase la cual llamamos `Calificaciones`.
 
 ---
 
 ### 6. ¿Qué representa un commit en Git?
 Un **commit** representa una **captura del estado del proyecto** en un momento determinado. Funciona como un punto de guardado en el historial de versiones donde se registran los cambios realizados en los archivos junto con un mensaje descriptivo, el autor y la fecha, permitiendo revisar la evolución del código o regresar a versiones anteriores si es necesario.
+
+---
+
+### 7. ¿Por qué es preferible realizar varios commits pequeños en lugar de un solo commit al final?
+Es preferible porque brinda **mayor control, claridad y trazabilidad** en el desarrollo:
+
+1. **Facilidad para identificar y corregir errores:** Si algo falla, es sencillo aislar el cambio exacto que causó el problema y revertirlo sin perder todo el trabajo.
+
+2. **Historial claro y ordenado:** Permite documentar el avance paso a paso con mensajes descriptivos, lo que facilita entender la evolución del código.
+
+3. **Trabajo en equipo eficiente:** Simplifica la colaboración al integrar cambios pequeños gradualmente, lo que facilita resolver conflictos al fusionar ramas.
 
 ---

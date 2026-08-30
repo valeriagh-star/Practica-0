@@ -1,4 +1,4 @@
-package capturarCalifs;
+package capturarCalifs.java;
 import java.util.Scanner;
 
 public class Calificaciones {
@@ -16,10 +16,11 @@ public class Calificaciones {
         }
     }
 
-    public static void mostrarResultado(String nombre, double promedio, String estado) {
+    public static void mostrarResultado(String nombre, double cal1, double cal2, double cal3, double promedio, String estado) {
 
         System.out.println("\n--- ESTADO ACADÉMICO ---");
         System.out.println("Nombre: " + nombre);
+        System.out.printf("Calificaciones: %.2f, %.2f, %.2f%n", cal1, cal2, cal3);
         System.out.printf("Promedio: %.2f%n", promedio);
         System.out.println("Estado: " + estado);
     }
@@ -74,6 +75,8 @@ public class Calificaciones {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("--- Sistema para Captura de Calificaciones ---");
+
         String nombre = leerNombre(scanner);
 
         double cal1 = leerCalificacion(scanner, "Ingresa la primera calificación: ");
@@ -86,7 +89,7 @@ public class Calificaciones {
 
         String estado = determinarEstado(promedio);
 
-        mostrarResultado(nombre, promedio, estado);
+     mostrarResultado(nombre, cal1, cal2, cal3, promedio, estado);
 
         scanner.close();
     }
