@@ -55,3 +55,10 @@ Separar el programa en funciones aportó ventajas clave en su estructura y mante
 3. **Mayor legibilidad en el `main`:** El código del método `main` queda limpio y fácil de entender, como si fuera una lista simple de pasos a seguir.
 
 ---
+
+### 4. ¿Qué función tendría que modificarse si la calificación mínima aprobatoria cambiara?
+Tendría que modificarse la función `determinarEstado`.
+
+Esta función contiene la estructura condicional `if (promedio >= 6.0)` que evalúa el resultado final. Si el criterio de aprobación cambia, solo es necesario ajustar el valor de comparación (`6.0`) dentro de esta función, manteniendo intactos el cálculo del promedio y la captura de datos.
+
+---
