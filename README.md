@@ -39,3 +39,19 @@ La **programación estructurada** organiza el flujo de un programa mediante tres
 - **Iteración:** Repetición de un bloque de código mediante **bucles** (por ejemplo `for`, `while` o `do-while`).
 
 ---
+
+### 3. ¿Qué ventaja tuvo separar el programa en funciones?
+Separar el programa en funciones aportó ventajas clave en su estructura y mantenimiento:
+
+1. **Reutilización de código:** En lugar de escribir la lógica de validación de calificaciones tres veces en el método `main`, se creó la función `leerCalificacion`. Esto permitió invocarla para `cal1`, `cal2` y `cal3` pasando solo el mensaje correspondiente sin duplicar código.
+
+2. **Responsabilidad única y modularidad:** Cada función realiza exactamente una tarea concreta:
+   - `leerNombre`: Valida que la entrada sea texto válido.
+   - `leerCalificacion`: Garantiza que el número ingresado esté entre $0$ y $10$.
+   - `calcularPromedio`: Ejecuta únicamente el cálculo matemático.
+   - `determinarEstado`: Evalúa la condición de aprobación.
+   - `mostrarResultado`: Maneja el formato de salida.
+
+3. **Mayor legibilidad en el `main`:** El código del método `main` queda limpio y fácil de entender, como si fuera una lista simple de pasos a seguir.
+
+---
