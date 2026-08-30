@@ -62,3 +62,13 @@ Tendría que modificarse la función `determinarEstado`.
 Esta función contiene la estructura condicional `if (promedio >= 6.0)` que evalúa el resultado final. Si el criterio de aprobación cambia, solo es necesario ajustar el valor de comparación (`6.0`) dentro de esta función, manteniendo intactos el cálculo del promedio y la captura de datos.
 
 ---
+
+### 5. ¿Qué diferencia conceptual observa entre una función y un método?
+La diferencia principal radica en su **pertenencia a una clase u objeto**:
+
+- **Función:** Es un bloque de código independiente que realiza una tarea específica sin depender de objetos o clases (característico de lenguajes estructurados como C).
+- **Método:** Es una función declarada dentro de una **clase**, orientada a definir el comportamiento de dicha clase o de sus objetos. (Representa un comportamiento dentro de la Programación Orientada a Objetos.)
+
+En Java, estrictamente todo bloque de código modular es un **método** por estar alojado dentro de una clase, en nuestro código: (`public static double calcularPromedio`), aunque en el paradigma estructurado se le conceptualice como una función.
+
+---
