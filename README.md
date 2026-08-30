@@ -30,3 +30,12 @@
 Además, un programa estructurado divide el problema en **funciones** con responsabilidades concretas, lo que evita códigos excesivamente largos y facilita el razonamiento sobre partes pequeñas del sistema.
 
 ---
+
+### 2. ¿Cuáles son las tres estructuras fundamentales de control?
+La **programación estructurada** organiza el flujo de un programa mediante tres estructuras principales:
+
+- **Secuencia:** Instrucciones ejecutadas una después de otra.
+- **Selección:** Elegir entre diferentes caminos utilizando **condiciones** (por ejemplo `if` o `switch`).
+- **Iteración:** Repetición de un bloque de código mediante **bucles** (por ejemplo `for`, `while` o `do-while`).
+
+---
